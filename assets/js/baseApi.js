@@ -1,6 +1,6 @@
 $(function() {
     $.ajaxPrefilter(function(options) {
-        options.url = 'http://ajax.frontend.itheima.net' + options.url;
+        options.url = 'http://api-breakingnews-web.itheima.net' + options.url;
         // 如果url地址中包括/my/开头的地址则需要配置请求头对象
         if (options.url.indexOf('/my/') !== -1) {
             options.headers = {
